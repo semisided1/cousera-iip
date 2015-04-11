@@ -243,6 +243,12 @@ class Hand():
 		for c in self.cards:
 			c.draw(canvas)
 		self.label.draw(canvas)
+		
+	def __str__(self):
+		toret = ''
+		for i in self.cards:
+			toret +=  str(i) + '\n' 
+		return toret
 	
 	def add_card(self, card) :
 		self.cards.append(card)
@@ -291,7 +297,10 @@ class BlackJack(SignalListener):
 		self.dealer_hand.add_card( self.deck.cards.pop() )
 		self.player_hand.add_card( self.deck.cards.pop() )
 		self.player_hand.add_card( self.deck.cards.pop() )
-		
+	
+		print(str(self.player_hand))
+		print(str(self.dealer_hand))
+			
 		self.game_label = Label(self,"BlackJack",(200,10), (270,30))
 		
 		self.tic_tm = TimerManager(1000)
