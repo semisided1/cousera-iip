@@ -4,7 +4,7 @@ import random
 
 try:
     import simplegui
-    url2 = 'https://raw.githubusercontent.com/semisided1/cousera-iip/dd4fd7d10d260c01fc106b093d43a4f3e7bf6c4d/SVG-cards-2.0.1/svg-cards.png'
+    url2 = 'https://raw.githubusercontent.com/semisided1/cousera-iip/master/SVG-cards-2.0.1/svg-cards.png'
 
 except ImportError:
     import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
