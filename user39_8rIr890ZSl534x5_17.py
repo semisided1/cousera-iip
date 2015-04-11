@@ -1,7 +1,7 @@
 
 import simplegui
 import random
-
+#memory
 
 class CardManager:
     
